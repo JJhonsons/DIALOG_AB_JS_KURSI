@@ -1,2 +1,2 @@
 # DIALOG_AB_JS_KURSI
-Mana JS elektroniskā klade
+Mana JS programmēšanas pamatu elektroniskā klade
