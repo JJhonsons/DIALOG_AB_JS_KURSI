@@ -20,7 +20,7 @@ Informācija ņemta no lapas - https://www.ecowin.org/ascii.htm
 
 **Simbolu no ascii tabulas dators redz "dzelžu līmenī"**
 
-* piemēram burts A "dzelžu līmenī" tiek attēlots kā 0100 0001
+  - piemēram burts A "dzelžu līmenī" tiek attēlots kā 0100 0001
 
 Viena elementārā atmiņu šuna saucas bits
 
@@ -34,3 +34,29 @@ Viena elementārā atmiņu šuna saucas bits
 
 
 *Moust significant bit(MSB) parasti atrodas tur kur ir vecākais pus baits, bet Less significat bit(LSB) atrodas tur kur jaunākais pus baits*
+
+# Formatēšana Github vitenē:
+
+Github vitnē iespējams tekstu dažādi formatēt norādot konkrētu darbību ar konkrētiem simboliem.
+
+Piemēri par teksta fonta lielumu
+
+# Teksts
+## Teksts
+###### Teksts
+
+Piemēri par fonta veidu:
+
+**Teksts**
+_Teksts_
+~~Teksts~~
+***Teksts***
+
+Teksta citēšana
+
+Teksta citēšana
+> Teksta citāts
+
+Bildes ievietošanas piemērs no cita linka
+
+![Šis ir piemērs par bildi](http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/monkey.png)
