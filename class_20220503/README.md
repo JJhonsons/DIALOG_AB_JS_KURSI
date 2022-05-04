@@ -60,3 +60,7 @@ Teksta citēšana
 Bildes ievietošanas piemērs no cita linka
 
 ![Šis ir piemērs par bildi](http://s3.amazonaws.com/pix.iemoji.com/images/emoji/apple/ios-12/256/monkey.png)
+
+Linka ievietošana no citas adreses 
+
+[piemērs par ascii tabulu no manas repertācijas](class_20220503/asciitable.jpg)
