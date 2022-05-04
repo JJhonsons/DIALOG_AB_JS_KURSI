@@ -9,7 +9,8 @@
 ``` 
 
 Šos "tagus" un simbolus var aplūkot ascii tabulā - standartizēta simbolu tabula.
-**tabula sastāv no 128 simboliem, kur pirmie 32 ir darbības simboli. 
+
+**tabula sastāv no 128 simboliem, kur pirmie 32 ir darbības simboli.** 
 
 **ASCII tabula:** 
 
