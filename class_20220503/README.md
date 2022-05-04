@@ -64,3 +64,14 @@ Bildes ievietošanas piemērs no cita linka
 Linka ievietošana no citas adreses 
 
 [piemērs par ascii tabulu no manas repertācijas](class_20220503/asciitable.jpg)
+
+Uzdevumu atzimēšana 
+
+Uzdevumi:
+
+- [x] Pirmais uzdevums
+- [ ] Otrais uzdevums
+
+Piemērs par emociju pievieošanu no github emociju kodiem
+
+@JJhonsons :space_invader: Ir pavecis pirmas nodarbības apskatu izklāstu savā elektroniskajā github pierakstu kladē :beers: :beers: :beers:
