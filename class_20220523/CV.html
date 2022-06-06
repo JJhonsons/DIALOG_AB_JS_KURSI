@@ -2,27 +2,34 @@
 <html>
 
 <head>
+
     <title>CV</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
     <style>
+        html,
         body {
-            background-color: aqua;
+            background-image: url(../atteli/fons_cv.jpg)
         }
+
+        html,
         table {
-  font-family: arial, sans-serif;
-  font-size: 10px;
-  border-collapse: collapse;
-  width: 70%;
-}
+            font-family: arial, sans-serif;
+            font-size: 10px;
+            border-collapse: collapse;
+            width: 70%;
+            color: black;
+        }
 
-td, th {
-  border: 1px solid #dddddd;
-  text-align: left;
-  padding: 8px;
-}
+        td,
+        th {
+            border: 1px solid black;
+            text-align: left;
+            padding: 8px;
+        }
 
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
+        tr:nth-child(even) {
+            background-color: #dddddd;
+        }
 
         h1 {
             color: grey;
@@ -63,15 +70,13 @@ tr:nth-child(even) {
 
     <h1>Curriculum vitae</h1>
 
-
-
     <p>
         <link rel="stylesheet" href="pirmais_stils.css">
         Personīgā informācija
     </p>
-<p>
-    <img src="../atteli/janis_j.jpg" style="float:left;width:200px;height:200px">
-</p>
+    <p>
+        <img src="../atteli/janis_j.jpg" style="float:left;width:200px;height:200px">
+    </p>
 
     <h2>
         Vārds Uzvārds Jānis Jansons
@@ -88,26 +93,56 @@ tr:nth-child(even) {
         <img src="../atteli/epatts.png" style="float:left;width: 20px;height: 20px;">
         janka.jansons@gmail.com
     </h2>
-    <h2>Dzimšanas datums:22.01.1990 Tautība:Latvietis</h2>
-    <p> </p>
+    <h2>Dzimšanas datums:22.01.1990 Tautība:Latvietis</h2> 
+    <!-- sociālo tīklu mēģinājums ar opciju tikt uz konkrētu adresi -->
+
+    <p>
+        <link rel="stylesheet" href="pirmais_stils.css">
+
+        Sociālie mēdiji
+    </p><br>
+
     <div class="a">
-        Izglītība
+    <ul>
+        <link rel="stylesheet" href="ikonas.css">
+
+        <li><a href="http://www.facebook.com"><i class="fab fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.twitter.com"><i class="fab fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="http://www.instagram.com"><i class="fab fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+</div>
+
+    <div class="a">
+        <p>Izglītība</p>
+    <table>
+        <tr>
+            <th>Iestāde</th>
+            <th>Gads</th>
+            <th>izglītība</th>
+        </tr>
+        <tr>
+            <th>Viduskola</th>
+            <th>2010</th>
+            <th>pamata</th>
+        </tr>
+    </table>
     </div>
-<table>
-    <tr>
-        <th>Iestāde</th>
-        <th>Gads</th>
-        <th>izglītība</th>
-    </tr>
-    <tr>
-        <th>Viduskola</th>
-        <th>2010</th>
-        <th>pamata</th>
-    </tr>
-</table>
 
-
-
+<div class="a">
+   <p>Darba pieredze</p>
+   <table>
+       <tr>
+           <th>Darba vieta</th>
+           <th>Ieņemamais amatas</th>
+           <th>Laika peridos</th>
+       </tr>
+       <tr>
+           <th>SIA "Mieriņš"</th>
+           <th>Auto vadītājs</th>
+           <th>2010-2015</th>
+       </tr>
+   </table>
+</div>
 
 
 </body>
