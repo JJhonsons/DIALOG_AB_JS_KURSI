@@ -15,5 +15,6 @@ document.getElementById("procenti3").innerHTML = pelna3;
 document.getElementById("procenti4").innerHTML = pelna4;
 document.getElementById("procenti5").innerHTML = pelna5;
 
-
+const cars = ["BMW", "Audi", "Volvo"];
+cars.sort()
 
