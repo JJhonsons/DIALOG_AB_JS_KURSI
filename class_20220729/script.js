@@ -1,17 +1,21 @@
 console.log("Skripta izpildes sākums:\n" + new Date());
-document.getElementById("manual_count").innerHTML = "1<br>2<br>3<br>4<br>";
+document.getElementById("manual_count").innerHTML = "manuālā ievadīšana:<br>1<br>2<br>3<br>4<br>";
 
-let text = "";
+let text = "klasiskā automātiskā skaitīšana:<br>";
 // for ( ; ; ){}
 // for ( sā - darbība_s ciklu uzsākot ; n - nosacījums_i cikla turpināšanai ; so - "soļa_u veikšana"){}
 // sā -> n (nosacījums ir spēkā) -> {} -> so -> n (-"-) -> {} -> so -> n (nav spēka)
 // pārējam pie nākamās darbības aiz cikla
 for (let i = 1; i < 5; i++) {
   text = text + i + "<br>";
+  //šeit tiek pielikts brake
+  if (i == 3){
+    break;
+  }
 }
 document.getElementById("for_automatic_count_classic").innerHTML = text;
 
-text = "";
+text = "non classic automātiskā skaitīšana:<br>";
 var i = 1;
 for ( ; i < 5 ; ) {
   text = text + i + "<br>";
@@ -19,7 +23,16 @@ for ( ; i < 5 ; ) {
 }
 document.getElementById("for_automatic_count_nonclassic").innerHTML = text;
 
-text = "";
+text = "do while:<br>";
+var i = 1;
+do{
+  text = text + i + "<br>";
+  i++;
+}
+while( i < 5 && i == 2 );
+document.getElementById("do_while_automatic_count").innerHTML = text;
+
+text = "while automātiskā skaitīšana";
 var i = 1;
 while( i < 5 ) {
   text = text + i + "<br>";

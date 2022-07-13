@@ -1,0 +1,15 @@
+body, html {
+    align-items: center;
+}
+.uzdevums1 {
+    padding: 25px;
+    border: 2px solid black;
+    width: 400px;
+    height: 400px;
+    text-align: left
+    
+}
+
+hr {
+    border: none;
+}
