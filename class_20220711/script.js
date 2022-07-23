@@ -66,5 +66,3 @@ function getYears() {
 
 getYears(); // Returns "Chamakh scored 5"
 document.getElementById("demo").innerHTML = getYears();
-
-Sameklēt pa vienam funkciju piemēram 
