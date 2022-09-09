@@ -24,6 +24,7 @@ body {
   box-sizing: border-box;
   height: 40px;
   font-size: 20px;
+  border-radius: 24px 24px 24px 24px;
 }
 
 nav a {
@@ -52,16 +53,97 @@ nav.sticky {
   height: 100%;
   border-radius: 24px;
 }
+/*nav bar sadalas beigas*/
 
-
-.img1{
+.fsection {
   width: 100%;
   height: 100%;
+  background-image: url('./attēli/45558.jpg');
+  background-size: cover;
+  border: 1px solid;
 }
+
 /*jaunais flipcrads*/
+.row{
+  display: flex;
+}
+.column {
+  padding: 10px;
+  height: 800px; /* Should be removed. Only for demonstration */
+  display:inline-block;
+  background-color: transparent;
+  border-color: #000;
+  box-sizing: border-box;
+  width: 100%;
+  
+}
 
-/*flip crad beigas*/
+.cards__single {
+  background: #a64e43;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-right: 50px;
+  margin-left: 30px;
+  
+  border-radius: 16px;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  position: relative;
+transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+  width:200px;
+  height: 300px;
+  display:inline-block;
+  --hue: 150;
+  --white-1: hsl(0, 0%, 90%);
+  --white-2: hsl(0, 0%, 80%);
+  --dark: hsl(var(--hue), 25%, 10%);
+  --grey: hsl(0, 0%, 50%);
+}
 
+.cards__single.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.cards__front,
+.cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.cards__front {
+  height: 100%;
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+  background: #ffc728;
+  border-radius: 16px;
+}
+
+.cards__back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  text-align: center;
+  right: 0;
+  left: 0;
+  top: 10px;
+  color: #20263f;
+  background: purple;
+}
+
+
+
+}
+
+
+/*beigas flipam*/
 #preloader{
   background: white url(./attēli/prloader.gif) no-repeat center center ;
   background-size: 15%;
@@ -163,7 +245,6 @@ nav.sticky {
     background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   }
   
-  /* Modal Content */
   .modal-content {
     background-color: #fefefe;
     margin: auto;
@@ -172,7 +253,7 @@ nav.sticky {
     width: 80%;
   }
   
-  /* The Close Button */
+  
   .close {
     color: #aaaaaa;
     float: right;
@@ -185,4 +266,95 @@ nav.sticky {
     color: #000;
     text-decoration: none;
     cursor: pointer;
+  }
+  
+  /* slide show*/
+
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    display: flex;
+    margin-top: 30px;
+  margin-right: 10px;
+
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
   }

@@ -371,3 +371,69 @@ button:focus+.design-container {
   --tr: 20;
   --op: .7;
 }
+
+NAAKAMA VERSIJA AR JS:
+HTML:
+<div class="maincontainer">
+        <div class="card1" id="card">
+          <div class="front">
+            <p>prieksā</p>
+          </div>
+          <div class="back">
+            <p>aizmugure</p>
+          </div>
+        </div>
+        <!--1 kartinas begas-->
+        
+      </div>
+
+CSS:
+.maincontainer{
+  position:relative;
+  width:200px;
+  height: 280px;
+  background: none;
+  float: left;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+}
+.card1 {
+  position:realative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: all 0.8s ease;
+}
+.front{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: #ffc728;
+  color: #000;
+  text-align: center;
+}
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  background: purple;
+  color: white;
+  text-align: center;
+  transform: rotateY(180deg);
+
+}
+.flipCard{
+  transform: rotateY(180deg);
+}
+
+JS:
+const card = document.getElementById("card");
+ card.addEventListener("click",flipCard);
+
+ function flipCard() {
+  card.classList.toggle("flipCard");
+ }
+
