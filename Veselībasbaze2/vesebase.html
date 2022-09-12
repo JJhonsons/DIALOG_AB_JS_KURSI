@@ -19,8 +19,8 @@
 
   <nav id="main-nav">
     <img src="./attēli/Veselibasbaze.jpeg" class="logo">
-    <a id="menu" href="#header">Par mums</a>
-    <a href="#tim-vine">Sadarbības partneri</a>
+    <a id="menu" href="#parmums">Par mums</a>
+    <a href="#partneri">Sadarbības partneri</a>
     <a href="#bill-hicks">Kā mūs atrast</a>
     <a href="#stewart-francis" id="myBtn">Kontakti</a>
   </nav>
@@ -29,11 +29,16 @@
 
     <!-- Kontaktu informacija -->
     <div class="modal-content">
+    
       <span class="close">&times;</span>
+      
       <p>Lai sazinātos ar VB dodat ziņu G-mail:veselibasbaze@gmail.com vai zvaniet uz nummuru 233333333.</p>
     </div>
 
   </div>
+
+  <button onclick="topFunction()" id="myBtn1" title="Go to top">Sākums</button>
+  
   <!--Kontaktu informacijas beigas-->
 
 
@@ -46,35 +51,52 @@
     <div class="column">
       <!--1 kartina-->
       <div class="cards__single">
+       
         <div class="cards__front">
-          haha
+          <div class="card-inner-content">
+            <img src="./attēli/janis_j.jpg" class="imgjj">
+            <h3>Jānis Jansons</h3>
+            Vecākais treneris 
+        </div>
         </div>
         <div class="cards__back">
+          <div class="card-inner-content">
+            <h3>Izglītība</h3>
+            <a>Bakalaura un maģistra grāds sporta zinātnē</a>
+            <h3>Pieredze</h3>
+            <a>Fizskās sagatavotības treneris BS Rīga, HK Jūrmalas sports</a>
+           <a>Daudzkārtējs Latvijas čempions vieglatlētikā, Latvijas izlases bobslejists. 2018. olimpsiko spēļu dalībnieks(10v.)</a>
+          </div>
           
         </div>
       </div>
       <!--1 kartinas beigas-->
       <div class="cards__single">
         <div class="cards__front">
-          haha
+          <div class="card-inner-content">
+            <img src="./attēli/karlisr.jpg" class="imgjj">
+            <h3>Kārlis Rutkovskis</h3>
+            Vecākais fizioterapeits
+        </div>
         </div>
         <div class="cards__back">
-          
+         
         </div>
       </div>
       <!--2 kartinas beigas-->
       <div class="cards__single">
         <div class="cards__front">
-          haha
+          
         </div>
         <div class="cards__back">
+          
           
         </div>
       </div>
       <!--Kartinas sakums-->
       <div class="cards__single">
         <div class="cards__front">
-          haha
+          
         </div>
         <div class="cards__back">
           
@@ -83,41 +105,73 @@
       <!--kartinu noslēgums-->
     </div>
 
-    <div class="column">
+    <div class="column" id="parmums">
       
       <div class="slideshow-container">
 
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
-          <img src="./attēli/fitness.jpg" style="width:100%">
+          <img src="./attēli/fitness.jpg" class="imgslide">
           <div class="text">Caption Text</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
-          <img src="./attēli/fizio.jpg" style="width:100%">
+          <img src="./attēli/fizio.jpg" class="imgslide">
           <div class="text">Caption Two</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
-          <img src="./attēli/nutrition.jpg" style="width:50%">
+          <img src="./attēli/nutrition.jpg" class="imgslide">
           <div class="text">Caption Three</div>
         </div>
-        
-        
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
         <a class="next" onclick="plusSlides(1)">❯</a>
         
         </div>
-      
-        
-        
         
     </div>
   </div>
   <!--sekcijas beigas-->
+
+  <!--sadarbibas partenru sekcija-->
+ 
+ 
+   
+    <div class="row_partn" id="partneri">
+    
+    <div class="square-holder">
+    <img alt="" src="./attēli/pranamteco.png" class="img_partn" >
+    </div>
+    
+   
+    <div class="square-holder">
+    <img alt="" src="./attēli/vefkrauklis.jpg" class="img_partn">
+   
+    </div>
+    
+    <div class="square-holder">
+    <img alt="" src="./attēli/Stirnu_buka_logo.png" class="img_partn">
+   
+    </div>
+
+    <div class="square-holder">
+      <img alt="" src="./attēli/b4s1.png" class="img_partn">
+     
+      </div>
+   
+   
+    </div>
+    
+  
+
+
+  <!--sadarbibas partneru sekcijas beigas-->
+  <div id="googleMap" style="width:100%;height:400px;"></div>
+
+
   <div class="footer">
     <div class="box">
       <div class="icon instagram">
