@@ -22,7 +22,7 @@ if (
     document.body.removeEventListener('click', closeNavbar);
   } else if (!document.body.classList.contains('show-nav')) {
     document.body.removeEventListener('click', closeNavbar);
-  }
+  } 
 }
 
 // koda daļa kas aizver navigācijas joslu ja ir uzspiests uz body sadaļu
