@@ -31,8 +31,25 @@
     <div class="modal-content">
     
       <span class="close">&times;</span>
+      <div class="contac-form">
+        <form action="https://api.web3forms.com/submit" method="POST" id="form">
+          <input type="hidden" name="access_key" value="3629a4ec-b83c-4718-bed1-2199975f47f0" />
+          <label for="fname">Vārds</label>
+          <input type="text" id="fname" name="Vārds">
       
-      <p>Lai sazinātos ar VB dodat ziņu G-mail:veselibasbaze@gmail.com vai zvaniet uz nummuru 233333333.</p>
+          <label for="email">E-pasts</label>
+          <input type="email" id="email" name="email">
+      
+          
+      
+          <label for="subject">Jūsu jautājums šeit</label>
+          <textarea id="subject" name="subject" placeholder="rakstiet šeit" style="height: 50px"></textarea>
+      
+          <input type="submit" value="Nosūtīt">
+          <p id="result"></p>
+        </form>
+      </div>
+      <p>Lai sazināto ar mums, aizpildiet augšā esošo pietikuma formu un mēs ar Jums sazināsimies</p>
     </div>
 
   </div>
@@ -44,7 +61,9 @@
 
 
   <div class="fsection">
-
+<div class="inside">
+<p>Tavs palīgs veselīgam dzīvesveidam</p>
+</div>
     </div>
 
   <!--Nakosa sekcija-->
@@ -113,19 +132,19 @@
         <div class="mySlides fade">
           <div class="numbertext">1 / 3</div>
           <img src="./attēli/fitness.jpg" class="imgslide">
-          <div class="text">Caption Text</div>
+          <div class="text">Fiziskās sagatavotības treniņi</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">2 / 3</div>
           <img src="./attēli/fizio.jpg" class="imgslide">
-          <div class="text">Caption Two</div>
+          <div class="text">Fizioterapija, teipošana un masāžas</div>
         </div>
         
         <div class="mySlides fade">
           <div class="numbertext">3 / 3</div>
           <img src="./attēli/nutrition.jpg" class="imgslide">
-          <div class="text">Caption Three</div>
+          <div class="text">Uztura speciālists</div>
         </div>
         
         <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -170,8 +189,7 @@
 
 
   <!--sadarbibas partneru sekcijas beigas-->
-  <div id="googleMap" style="width:100%;height:400px;"></div>
-
+  
 
   <div class="footer">
     <div class="box">
